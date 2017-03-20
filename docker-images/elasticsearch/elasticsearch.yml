@@ -1,0 +1,15 @@
+cluster:
+  name: kubernetes-logging
+
+transport.tcp.port: 9300
+
+http.port: 9200
+
+network.host: ${NETWORK_HOST}
+
+path:
+  data: /usr/share/elasticsearch/data
+  logs: /usr/share/elasticsearch/logs
+
+discovery.zen.ping.unicast.hosts: elasticsearch-logging.efk:9300
+discovery.zen.minimum_master_nodes: ${MINIMUM_MASTER_NODES}

@@ -1,0 +1,7 @@
+apiVersion: storage.k8s.io/v1beta1
+kind: StorageClass
+metadata:
+  name: efk-sc
+parameters:
+  type: gp2
+provisioner: kubernetes.io/aws-ebs
