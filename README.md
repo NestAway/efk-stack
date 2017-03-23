@@ -30,3 +30,5 @@ kubectl apply -f kibana.yml
 # Note about Elasticsearch plugin for Fluentd
 
 `fluent-plugin-elasticsearch-1.9.2.1.gem` used while creating Fluentd docker image is built from the forked version of the original repository to make it compatible for `Elasticsearch > v5` -> https://github.com/NestAway/fluent-plugin-elasticsearch/tree/v1.9.2.1
+
+# This is now fixed in the version 1.9.3 of the plugin. So, no need to build custom image now
