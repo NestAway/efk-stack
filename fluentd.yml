@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: fluentd-es
-        image: <docker-image>
+        image: quay.io/fluent/fluentd-kubernetes-daemonset
         env:
           - name:  FLUENT_ELASTICSEARCH_HOST
             value: "elasticsearch-logging"
