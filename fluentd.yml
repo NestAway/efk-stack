@@ -11,6 +11,9 @@ spec:
       labels:
         k8s-app: fluentd-es
     spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master
+        effect: NoSchedule
       containers:
       - name: fluentd-es
         image: quay.io/fluent/fluentd-kubernetes-daemonset
